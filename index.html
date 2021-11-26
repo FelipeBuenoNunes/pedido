@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hanb</title>
+    <link rel="shortcut icon"
+        href="https://cdn-icons.flaticon.com/png/512/5875/premium/5875625.png?token=exp=1637875989~hmac=ad626628cd292a3dff5dca59482cd627"
+        type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <div></div>
+        <form>
+            <div id="dBread">
+                <h2>Escolha o Pão</h2>
+                <label for="fra">Francês</label>
+                <input value="Francês 3.00" type="radio" name="bread" id="fra" />
+                <label for="aus">Australiano</label>
+                <input value="Australiano 8.00" type="radio" name="bread" id="aus" />
+                <label for="bri">Brioche</label>
+                <input value="Brioche 6.00" type="radio" name="bread" id="bri" />
+            </div>
+            <div id="dHamb">
+                <h2>Escolha o Hamburguer</h2>
+                <label for="pic">Picanha</label>
+                <input value="Picanha 13.00" type="radio" name="hamb" id="pic" />
+                <label for="cos">Costela</label>
+                <input value="Costela 10.00" type="radio" name="hamb" id="cos" />
+                <label for="veg">Vegano</label>
+                <input value="Vegano 12.00" type="radio" name="hamb" id="veg" />
+            </div>
+            <div id="dSalad">
+                <h2>Escolha o Salada</h2>
+                <label for="alf">Alface</label>
+                <input value="Alface 1.50" type="radio" name="salad" id="alf" />
+                <label for="tom">Tomate</label>
+                <input value="Tomate 1.50" type="radio" name="salad" id="tom" />
+                <label for="not">Sem salada</label>
+                <input value="Sem-salada 0.00" type="radio" name="salad" id="not" />
+            </div>
+            <div>
+                <h2>Escolha o Queijo</h2>
+                <label for="mus">Mussarela</label>
+                <input value="Mussarela 3.00" type="radio" name="cheese" id="mus" />
+                <label for="pra">Prato</label>
+                <input value="Prato 3.00" type="radio" name="cheese" id="pra" />
+                <label for="che">Cheddar</label>
+                <input value="Cheddar 5.00" type="radio" name="cheese" id="che" />
+            </div>
+        </form>
+        <button type="button" onclick="teste()">teste</button>
+        <div id="lastDiv">
+            <div>
+                <p class="item" id="pBread"></p>
+                <p class="valueI" id="pBreadValue"></p>
+            </div>
+            <div>
+                <p class="item" id="pHamb"></p>
+                <p class="valueI" id="pHambValue"></p>
+            </div>
+            <div>
+                <p class="item" id="pSalad"></p>
+                <p class="valueI" id="pSaladValue"></p>
+            </div>
+            <div>
+                <p class="item" id="pCheese"></p>
+                <p class="valueI" id="pCheeseValue"></p>
+            </div>
+            <p class="valueI" id="valueAll"></p>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
